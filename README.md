@@ -36,7 +36,7 @@ source venv/Scripts/activate
 ```shell
 pip install -r requirements.txt
 ```
-**IMPORTANTE**: As biliotecas inicialmente listadas requirements.txt só dizem respeito aos testes, para a execução da sua aplicação você deve atualizá-lo adicionando todos os pacotes necessários.
+**IMPORTANTE**: As bibliotecas inicialmente listadas requirements.txt só dizem respeito aos testes, para a execução da sua aplicação você deve atualizá-lo adicionando todos os pacotes necessários.
 
 
 ## Execução dos testes:
