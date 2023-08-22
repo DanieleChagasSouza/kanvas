@@ -67,7 +67,6 @@ class TestRelationshipTest(TestCase):
 
     def test_many_to_many_between_account_course(self):
         result = Course._meta.get_field("students")
-        import ipdb
 
         message = (
             "Relacionamento N:N não foi declarado corretamente."
