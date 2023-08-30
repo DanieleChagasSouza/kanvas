@@ -16,11 +16,7 @@ from rest_framework.generics import (
     RetrieveUpdateAPIView,
     DestroyAPIView,
 )
-from accounts.permissions import (
-    CanAccessContent,
-    IsAccountOwner,
-    IsAdminOrReadOnly
-)
+from accounts.permissions import CanAccessContent, IsAccountOwner, IsAdminOrReadOnly
 from drf_spectacular.utils import extend_schema
 
 
