@@ -12,7 +12,9 @@ class Choices(models.TextChoices):
 class Course(models.Model):
     id = models.UUIDField(default=uuid4, primary_key=True, editable=False)
     name = models.CharField(max_length=100, unique=True)
-    status = models.CharField(max_length=11, choices=Choices.choices, default=Choices.DEFAULT)
+    status = models.CharField(
+        max_length=11, choices=Choices.choices, default=Choices.DEFAULT
+    )
     start_date = models.DateField()
     end_date = models.DateField()
     instructor = models.ForeignKey(

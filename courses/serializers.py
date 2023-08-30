@@ -52,7 +52,7 @@ class CourseStudentAddSerializer(serializers.ModelSerializer):
                 student = Account.objects.get(email=email)
                 try:
                     StudentCourse.objects.get(student=student, course=instance)
-                except:
+                except Exception:
                     instance.students.add(student)
                     instance.save()
                 return instance

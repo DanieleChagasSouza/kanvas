@@ -99,17 +99,15 @@ DATABASES = {
         "NAME": os.getenv("POSTGRES_DB_NAME"),
         "HOST": os.getenv("POSTGRES_DB_HOST"),
         "PORT": os.getenv("POSTGRES_DB_PORT"),
-    },
-    "db_reserva": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    },
+    }
 }
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 if DATABASE_URL:
-    db_from_env = dj_database_url.config(default=DATABASE_URL, conn_max_age=500, ssl_require=True)
+    db_from_env = dj_database_url.config(
+        default=DATABASE_URL, conn_max_age=500, ssl_require=True
+    )
     DATABASES["default"].update(db_from_env)
     DEBUG = False
 
