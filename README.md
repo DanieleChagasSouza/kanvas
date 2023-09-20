@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # M5 - Projeto Final Kanvas
 
 ## Preparando ambiente para execução dos testes
@@ -78,3 +79,6 @@ pytest --testdox -vvs caminho/para/o/arquivo/de/teste::NomeDaClasse::nome_do_met
 ```shell
 pytest --testdox -vvs tests/accounts/tests_views.py::TestAccountView::test_login_without_required_fields
 ```
+=======
+# kanvas
+>>>>>>> e0a87fceb29f24554e104870958bbc27c44bd6bb
